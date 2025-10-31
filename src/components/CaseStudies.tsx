@@ -9,7 +9,7 @@ export function CaseStudies() {
       company: "E-commerce платформа",
       title: "Увеличение продаж на 340% с AI-ассистентом",
       description: "Внедрили интеллектуального помощника для обработки заявок. Время отклика сократилось с 4 часов до 2 минут.",
-      image: "https://images.unsplash.com/photo-1717386255767-52643970d483?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGF1dG9tYXRpb24lMjBkaWdpdGFsfGVufDF8fHx8MTc2MTc3NzI0N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/images/business-automation.svg",
       stats: [
         { icon: TrendingUp, label: "Рост продаж", value: "+340%" },
         { icon: Clock, label: "Время отклика", value: "2 мин" },
@@ -21,7 +21,7 @@ export function CaseStudies() {
       company: "Финансовая компания",
       title: "Автоматизация обработки документов",
       description: "Разработали систему распознавания и анализа финансовых документов с точностью 98.7%.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2MTg0MjY3Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/images/dashboard.svg",
       stats: [
         { icon: TrendingUp, label: "Точность", value: "98.7%" },
         { icon: Clock, label: "Экономия времени", value: "80%" },
@@ -33,7 +33,7 @@ export function CaseStudies() {
       company: "Служба поддержки",
       title: "Чат-бот для обработки 70% обращений",
       description: "Умный бот обрабатывает типовые запросы, освобождая операторов для сложных задач.",
-      image: "https://images.unsplash.com/photo-1553775282-20af80779df7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXN0b21lciUyMHNlcnZpY2UlMjBzdXBwb3J0fGVufDF8fHx8MTc2MTgwNTQwN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/images/customer-support.svg",
       stats: [
         { icon: TrendingUp, label: "Автоматизация", value: "70%" },
         { icon: Clock, label: "Доступность", value: "24/7" },

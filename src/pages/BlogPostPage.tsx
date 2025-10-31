@@ -21,7 +21,7 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
         role: "AI Product Lead",
         avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Dmitry",
       },
-      image: "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NjE4MzY4OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "/images/ecommerce.svg",
       content: `
         <p>Искусственный интеллект кардинально меняет индустрию электронной коммерции. В 2025 году мы наблюдаем беспрецедентное внедрение AI-технологий во все аспекты онлайн-торговли.</p>
 
@@ -66,7 +66,7 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
         role: "Head of Customer Success",
         avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Anna",
       },
-      image: "https://images.unsplash.com/photo-1690264460165-0ff5e1063d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbiUyMG9mZmljZXxlbnwxfHx8fDE3NjE3NjgyNDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "/images/customer-service.svg",
       content: `
         <p>За годы работы с чат-ботами мы выявили типичные ошибки, которые совершают компании при автоматизации клиентского сервиса. Избежав их, вы сэкономите время и деньги.</p>
 
@@ -128,7 +128,7 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
         role: "Lead ML Engineer",
         avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Mikhail",
       },
-      image: "https://images.unsplash.com/photo-1630283017802-785b7aff9aac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYxNzQ4ODYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "/images/ml-office.svg",
       content: `
         <p>Machine Learning — это не магия, а инструмент для решения бизнес-задач. В этой статье разберем, как начать внедрение ML в вашу компанию.</p>
 

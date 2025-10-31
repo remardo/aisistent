@@ -14,7 +14,7 @@ export function CaseDetailPage({ caseId }: CaseDetailPageProps) {
     company: "E-commerce платформа 'ShopMaster'",
     title: "Увеличение продаж на 340% с AI-ассистентом",
     category: "E-commerce",
-    image: "https://images.unsplash.com/photo-1717386255767-52643970d483?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGF1dG9tYXRpb24lMjBkaWdpdGFsfGVufDF8fHx8MTc2MTc3NzI0N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/images/business-automation.svg",
     challenge: "Интернет-магазин ShopMaster сталкивался с высокой нагрузкой на службу поддержки. Среднее время ответа на запрос составляло 4 часа, что негативно влияло на конверсию. До 30% потенциальных клиентов уходили, не дождавшись ответа.",
     solution: "Мы разработали интеллектуального AI-ассистента, интегрированного с CRM-системой и базой знаний компании. Ассистент обрабатывает входящие запросы, отвечает на типовые вопросы, помогает с выбором товара и оформлением заказа.",
     results: [

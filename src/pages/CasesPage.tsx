@@ -15,7 +15,7 @@ export function CasesPage() {
       company: "E-commerce платформа",
       title: "Увеличение продаж на 340% с AI-ассистентом",
       description: "Внедрили интеллектуального помощника для обработки заявок. Время отклика сократилось с 4 часов до 2 минут.",
-      image: "https://images.unsplash.com/photo-1717386255767-52643970d483?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGF1dG9tYXRpb24lMjBkaWdpdGFsfGVufDF8fHx8MTc2MTc3NzI0N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/images/business-automation.svg",
       stats: [
         { icon: TrendingUp, label: "Рост продаж", value: "+340%" },
         { icon: Clock, label: "Время отклика", value: "2 мин" },
@@ -29,7 +29,7 @@ export function CasesPage() {
       company: "Финансовая компания",
       title: "Автоматизация обработки документов",
       description: "Разработали систему распознавания и анализа финансовых документов с точностью 98.7%.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2MTg0MjY3Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/images/dashboard.svg",
       stats: [
         { icon: TrendingUp, label: "Точность", value: "98.7%" },
         { icon: Clock, label: "Экономия времени", value: "80%" },
@@ -43,7 +43,7 @@ export function CasesPage() {
       company: "Служба поддержки",
       title: "Чат-бот для обработки 70% обращений",
       description: "Умный бот обрабатывает типовые запросы, освобождая операторов для сложных задач.",
-      image: "https://images.unsplash.com/photo-1553775282-20af80779df7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXN0b21lciUyMHNlcnZpY2UlMjBzdXBwb3J0fGVufDF8fHx8MTc2MTgwNTQwN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/images/customer-support.svg",
       stats: [
         { icon: TrendingUp, label: "Автоматизация", value: "70%" },
         { icon: Clock, label: "Доступность", value: "24/7" },
@@ -57,7 +57,7 @@ export function CasesPage() {
       company: "Маркетинговое агентство",
       title: "AI для персонализации email-кампаний",
       description: "Система машинного обучения анализирует поведение пользователей и создает персонализированные предложения.",
-      image: "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NjE4MzY4OTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/images/ecommerce.svg",
       stats: [
         { icon: TrendingUp, label: "Open Rate", value: "+180%" },
         { icon: Clock, label: "Время настройки", value: "1 час" },
@@ -71,7 +71,7 @@ export function CasesPage() {
       company: "Логистическая компания",
       title: "Оптимизация маршрутов с помощью AI",
       description: "Алгоритм прогнозирует загруженность дорог и оптимизирует маршруты доставки в реальном времени.",
-      image: "https://images.unsplash.com/photo-1630283017802-785b7aff9aac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYxNzQ4ODYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/images/ml-office.svg",
       stats: [
         { icon: TrendingUp, label: "Экономия топлива", value: "35%" },
         { icon: Clock, label: "Время доставки", value: "-40%" },
@@ -85,7 +85,7 @@ export function CasesPage() {
       company: "Розничная сеть",
       title: "Прогнозирование спроса и управление запасами",
       description: "AI-система предсказывает спрос на товары с точностью 94%, оптимизируя складские запасы.",
-      image: "https://images.unsplash.com/photo-1690264460165-0ff5e1063d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbiUyMG9mZmljZXxlbnwxfHx8fDE3NjE3NjgyNDF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/images/teamwork.svg",
       stats: [
         { icon: TrendingUp, label: "Точность прогноза", value: "94%" },
         { icon: Clock, label: "Сокращение излишков", value: "60%" },
