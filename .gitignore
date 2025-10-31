@@ -1,0 +1,21 @@
+# Node
+node_modules/
+npm-debug.log*
+pnpm-lock.yaml
+package-lock.json
+
+# Build outputs
+build/
+dist/
+
+# Env
+.env
+.env.*
+!supabase/functions/server/.env.example
+
+# Vercel
+.vercel
+
+# Misc
+.DS_Store
+
