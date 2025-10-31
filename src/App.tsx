@@ -17,6 +17,7 @@ const AutomationPage = lazy(() => import("./pages/services/AutomationPage").then
 const VoiceAssistantsPage = lazy(() => import("./pages/services/VoiceAssistantsPage").then(m => ({ default: m.VoiceAssistantsPage })));
 const AnalyticsPage = lazy(() => import("./pages/services/AnalyticsPage").then(m => ({ default: m.AnalyticsPage })));
 const CustomSolutionsPage = lazy(() => import("./pages/services/CustomSolutionsPage").then(m => ({ default: m.CustomSolutionsPage })));
+const ContactsPage = lazy(() => import("./pages/ContactsPage").then(m => ({ default: m.ContactsPage })));
 
 export default function App() {
   const location = useLocation();
@@ -59,6 +60,7 @@ export default function App() {
             <Route path="/services/voice-assistants" element={<VoiceAssistantsPage />} />
             <Route path="/services/analytics" element={<AnalyticsPage />} />
             <Route path="/services/custom-solutions" element={<CustomSolutionsPage />} />
+            <Route path="/contacts" element={<ContactsPage />} />
             {/* Legacy route */}
             <Route path="/service/:serviceId" element={<ServiceDetailRoute />} />
             {/* Fallback */}

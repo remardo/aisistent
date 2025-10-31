@@ -49,7 +49,7 @@ export function Header() {
               Цены
             </Link>
             <Link 
-              to="/" 
+              to="/blog" 
               onClick={() => {
                 setTimeout(() => {
                   document.getElementById('blog')?.scrollIntoView({ behavior: 'smooth' });
@@ -60,7 +60,7 @@ export function Header() {
               Блог
             </Link>
             <Link 
-              to="/" 
+              to="/contacts" 
               onClick={() => {
                 setTimeout(() => {
                   document.getElementById('news')?.scrollIntoView({ behavior: 'smooth' });
@@ -68,7 +68,7 @@ export function Header() {
               }}
               className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
             >
-              Новости
+              Контакты
             </Link>
           </div>
 
@@ -140,7 +140,7 @@ export function Header() {
               Цены
             </Link>
             <Link
-              to="/"
+              to="/blog"
               className="text-gray-700 hover:text-blue-600 transition-colors"
               onClick={() => {
                 setMobileMenuOpen(false);
@@ -152,7 +152,7 @@ export function Header() {
               Блог
             </Link>
             <Link
-              to="/"
+              to="/contacts"
               className="text-gray-700 hover:text-blue-600 transition-colors"
               onClick={() => {
                 setMobileMenuOpen(false);
@@ -161,7 +161,7 @@ export function Header() {
                 }, 100);
               }}
             >
-              Новости
+              Контакты
             </Link>
             
             {/* Mobile Contact Info */}
