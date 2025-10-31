@@ -1,7 +1,7 @@
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-import { HashRouter, Routes, Route, useParams, useLocation } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import { Routes, Route, useParams, useLocation } from "react-router-dom";
+import { Suspense, lazy, useEffect } from "react";
 
 // Route-level code splitting (named exports mapped to default)
 const HomePage = lazy(() => import("./pages/HomePage").then(m => ({ default: m.HomePage })));
@@ -22,7 +22,7 @@ export default function App() {
   const location = useLocation();
 
   // Scroll to top on route change
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
@@ -42,33 +42,31 @@ export default function App() {
   };
 
   return (
-    <HashRouter>
-      <div className="min-h-screen bg-white">
-        <Header />
-        <main>
-          <Suspense fallback={null}>
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/cases" element={<CasesPage />} />
-              <Route path="/case/:caseId" element={<CaseDetailRoute />} />
-              <Route path="/blog" element={<BlogPage />} />
-              <Route path="/blog/:slug" element={<BlogPostRoute />} />
-              <Route path="/services" element={<ServicesPage />} />
-              <Route path="/services/chatbots" element={<ChatbotsPage />} />
-              <Route path="/services/ai-assistants" element={<AIAssistantsPage />} />
-              <Route path="/services/automation" element={<AutomationPage />} />
-              <Route path="/services/voice-assistants" element={<VoiceAssistantsPage />} />
-              <Route path="/services/analytics" element={<AnalyticsPage />} />
-              <Route path="/services/custom-solutions" element={<CustomSolutionsPage />} />
-              {/* Legacy route */}
-              <Route path="/service/:serviceId" element={<ServiceDetailRoute />} />
-              {/* Fallback */}
-              <Route path="*" element={<HomePage />} />
-            </Routes>
-          </Suspense>
-        </main>
-        <Footer />
-      </div>
-    </HashRouter>
+    <div className="min-h-screen bg-white">
+      <Header />
+      <main>
+        <Suspense fallback={null}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/cases" element={<CasesPage />} />
+            <Route path="/case/:caseId" element={<CaseDetailRoute />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogPostRoute />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/services/chatbots" element={<ChatbotsPage />} />
+            <Route path="/services/ai-assistants" element={<AIAssistantsPage />} />
+            <Route path="/services/automation" element={<AutomationPage />} />
+            <Route path="/services/voice-assistants" element={<VoiceAssistantsPage />} />
+            <Route path="/services/analytics" element={<AnalyticsPage />} />
+            <Route path="/services/custom-solutions" element={<CustomSolutionsPage />} />
+            {/* Legacy route */}
+            <Route path="/service/:serviceId" element={<ServiceDetailRoute />} />
+            {/* Fallback */}
+            <Route path="*" element={<HomePage />} />
+          </Routes>
+        </Suspense>
+      </main>
+      <Footer />
+    </div>
   );
 }
