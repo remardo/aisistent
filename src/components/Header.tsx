@@ -1,5 +1,6 @@
 import { Menu, X, Phone } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 // SVG иконки для WhatsApp и Telegram
 const WhatsAppIcon = () => (
@@ -22,25 +23,23 @@ export function Header() {
       <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <span className="text-2xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               AIsistant
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6">
             <a href="#/services" className="text-gray-700 hover:text-blue-600 transition-colors">
               Услуги
             </a>
-            <a href="#/cases" className="text-gray-700 hover:text-blue-600 transition-colors">
+            <Link to="/cases" className="text-gray-700 hover:text-blue-600 transition-colors">
               Кейсы
-            </a>
-            <a 
-              href="#/" 
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.hash = '/';
+            </Link>
+            <Link 
+              to="/" 
+              onClick={() => {
                 setTimeout(() => {
                   document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
@@ -48,10 +47,10 @@ export function Header() {
               className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
             >
               Цены
-            </a>
-            <a 
-              href="#/" 
-              onClick={(e) => {
+            </Link>
+            <Link 
+              to="/" 
+              onClick={() => {
                 e.preventDefault();
                 window.location.hash = '/';
                 setTimeout(() => {
@@ -61,10 +60,10 @@ export function Header() {
               className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
             >
               Блог
-            </a>
-            <a 
-              href="#/" 
-              onClick={(e) => {
+            </Link>
+            <Link 
+              to="/" 
+              onClick={() => {
                 e.preventDefault();
                 window.location.hash = '/';
                 setTimeout(() => {
@@ -74,7 +73,7 @@ export function Header() {
               className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
             >
               Новости
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Contact Info */}
@@ -118,62 +117,56 @@ export function Header() {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="lg:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-gray-200 pt-4">
-            <a
-              href="#/services"
+            <Link
+              to="/services"
               className="text-gray-700 hover:text-blue-600 transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Услуги
-            </a>
-            <a
-              href="#/cases"
+            </Link>
+            <Link
+              to="/cases"
               className="text-gray-700 hover:text-blue-600 transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Кейсы
-            </a>
-            <a
-              href="#/"
+            </Link>
+            <Link
+              to="/"
               className="text-gray-700 hover:text-blue-600 transition-colors"
-              onClick={(e) => {
-                e.preventDefault();
+              onClick={() => {
                 setMobileMenuOpen(false);
-                window.location.hash = '/';
                 setTimeout(() => {
                   document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
               }}
             >
               Цены
-            </a>
-            <a
-              href="#/"
+            </Link>
+            <Link
+              to="/"
               className="text-gray-700 hover:text-blue-600 transition-colors"
-              onClick={(e) => {
-                e.preventDefault();
+              onClick={() => {
                 setMobileMenuOpen(false);
-                window.location.hash = '/';
                 setTimeout(() => {
                   document.getElementById('blog')?.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
               }}
             >
               Блог
-            </a>
-            <a
-              href="#/"
+            </Link>
+            <Link
+              to="/"
               className="text-gray-700 hover:text-blue-600 transition-colors"
-              onClick={(e) => {
-                e.preventDefault();
+              onClick={() => {
                 setMobileMenuOpen(false);
-                window.location.hash = '/';
                 setTimeout(() => {
                   document.getElementById('news')?.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
               }}
             >
               Новости
-            </a>
+            </Link>
             
             {/* Mobile Contact Info */}
             <div className="pt-4 border-t border-gray-200">

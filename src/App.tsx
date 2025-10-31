@@ -1,6 +1,6 @@
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-import { HashRouter, Routes, Route, useParams } from "react-router-dom";
+import { HashRouter, Routes, Route, useParams, useLocation } from "react-router-dom";
 import { Suspense, lazy } from "react";
 
 // Route-level code splitting (named exports mapped to default)
@@ -19,6 +19,13 @@ const AnalyticsPage = lazy(() => import("./pages/services/AnalyticsPage").then(m
 const CustomSolutionsPage = lazy(() => import("./pages/services/CustomSolutionsPage").then(m => ({ default: m.CustomSolutionsPage })));
 
 export default function App() {
+  const location = useLocation();
+
+  // Scroll to top on route change
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   const CaseDetailRoute = () => {
     const { caseId } = useParams();
     return <CaseDetailPage caseId={caseId || ""} />;
