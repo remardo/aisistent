@@ -51,8 +51,6 @@ export function Header() {
             <Link 
               to="/" 
               onClick={() => {
-                e.preventDefault();
-                window.location.hash = '/';
                 setTimeout(() => {
                   document.getElementById('blog')?.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
@@ -64,8 +62,6 @@ export function Header() {
             <Link 
               to="/" 
               onClick={() => {
-                e.preventDefault();
-                window.location.hash = '/';
                 setTimeout(() => {
                   document.getElementById('news')?.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
